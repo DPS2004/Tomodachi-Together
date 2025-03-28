@@ -1,0 +1,13 @@
+Thought bubble
+0.25, 0.311
+
+Give Item
+0.071, 0.062
+
+
+
+Gift start position (pancakes)
+0.808, 0.621
+
+Gift end position
+0.5, 0.618

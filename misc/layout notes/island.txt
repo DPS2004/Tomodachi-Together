@@ -1,0 +1,11 @@
+Apartment
+0.344, 0.292
+
+Food Mart
+0.090, 0.704
+
+Town Hall
+0.525, 0.323
+
+Save button
+0.852, 0.935

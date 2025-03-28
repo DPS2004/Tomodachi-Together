@@ -1,0 +1,42 @@
+-----------------Bottom of screen------------------
+Back
+0.055, 0.939
+
+Bottom Enter Button
+0.5, 0.939
+
+Bottom Confirm Button (Food Mart Buy, give gift Give)
+0.780, 0.932
+
+
+------------------Full screen Popup-------------
+Popup OK
+0.5, 0.858
+
+(Reference: Food Mart)
+Popup 1 more 
+0.183, 0.342
+
+Popup 1 less
+0.183, 0.556
+
+2 button popup left button (Cancel)
+0.266, 0.858
+
+2 button popup left button (Buy)
+0.729, 0.858
+
+
+
+
+-----------------------List of items------------------
+Item 1
+0.5, 0.360
+
+Item 2
+0.5, 0.465
+
+Item 3
+0.5, 0.571
+
+(5 total)
