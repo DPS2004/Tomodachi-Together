@@ -62,6 +62,7 @@ function citrainput:calibrate()
 	if(accept ~= '' and accept ~= 'y') then
 		self:calibrate()
 	end
+	citrainput:savecalibration()
 
 end
 
@@ -70,18 +71,27 @@ function citrainput:savecalibration()
 end
 
 function citrainput:loadcalibration()
+print('loading calibration')
 	self.cal = dpf.loadjson('savedata/calibration.json',self.cal)
 	
 
 end
 
+function citrainput:convertxy(x,y)
+	return self.cal.screenx1 + x * (self.cal.screenx2 - self.cal.screenx1),self.cal.screeny1 + y * (self.cal.screeny2 - self.cal.screeny1)
+end
+
 --x and y are floats between 0 and 1
 function citrainput:touch(x,y)
 
-	autogui.click(
-		self.cal.screenx1 + x * (self.cal.screenx2 - self.cal.screenx1), 
-		self.cal.screeny1 + y * (self.cal.screeny2 - self.cal.screeny1)
-	)
+	autogui.click(self:convertxy(x,y))
+
+end
+function citrainput:drag(x1,y1,x2,y2,t)
+	t = t or 0.5
+	autogui.moveTo(self:convertxy(x1,y1))
+	x2,y2 = self:convertxy(x2,y2)
+	autogui.dragTo(x2,y2,'left',t)
 
 end
 
@@ -105,7 +115,7 @@ end
 
 
 function citrainput:getposition()
-	x, y = autogui.position()
+	local x, y = autogui.position()
 	x = (x - self.cal.screenx1) / (self.cal.screenx2 - self.cal.screenx1)
 	y = (y - self.cal.screeny1) / (self.cal.screeny2 - self.cal.screeny1)
 	print(x,y)
