@@ -3,3 +3,4 @@ deps
 *.log
 gateway.json
 privatestuff.lua
+savedata/camera.png
