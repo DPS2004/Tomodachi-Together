@@ -88,6 +88,7 @@ loadslash('type')
 loadslash('drag')
 loadslash('qrcode')
 loadslash('qrcodereset')
+loadslash('tomo')
 
 
 
