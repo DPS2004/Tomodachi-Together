@@ -2,6 +2,10 @@
 -- _G['autogui'] = require('libs/autogui')
 -- it is very annoying.
 print('hiii')
+
+-- this should really be set to false if we ever intend to push this to a wider audience
+_G['UNSAFE_MODE'] = true
+
 -- import libraries
 _G['autogui'] = require('libs/autogui')
 _G['class'] = require('libs/middleclass/middleclass')

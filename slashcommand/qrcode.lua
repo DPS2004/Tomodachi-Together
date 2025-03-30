@@ -1,3 +1,12 @@
+--[[
+	THIS IS AN UNSAFE_MODE COMMAND.
+
+	THIS COMMAND WILL SAVE ARBITRARY DATA TO YOUR
+	COMPUTER GRABBED THROUGH THE INTERNET.
+
+	ONLY ENABLE UNSAFE_MODE IF YOU KNOW WHAT YOU'RE DOING!
+]]
+
 --------------Setup---------------
 local commandname = 'qrcode'
 local commanddescription = 'Set the camera view to an attatched image.'

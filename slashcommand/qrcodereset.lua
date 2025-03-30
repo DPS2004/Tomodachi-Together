@@ -1,3 +1,12 @@
+--[[
+	THIS IS AN UNSAFE_MODE COMMAND.
+
+	THIS COMMAND WILL DELETE A FILE ON YOUR
+	COMPUTER AND REPLACE IT WITH ANOTHER.
+
+	ONLY ENABLE UNSAFE_MODE IF YOU KNOW WHAT YOU'RE DOING!
+]]
+
 --------------Setup---------------
 local commandname = 'qrcodereset'
 local commanddescription = 'Reset the camera to a black screen.'

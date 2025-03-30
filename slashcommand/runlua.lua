@@ -1,3 +1,11 @@
+--[[
+	THIS IS AN UNSAFE_MODE COMMAND.
+	THIS COMMAND WILL RUN UNRESTRICTED LUA CODE
+	PASSED AS AN ARGUMENT DIRECTLY ON YOUR MACHINE.
+
+	ONLY ENABLE UNSAFE_MODE IF YOU KNOW WHAT YOU'RE DOING!
+]]
+
 --------------Setup---------------
 local commandname = 'runlua'
 local commanddescription = 'just straight up run some lua. '

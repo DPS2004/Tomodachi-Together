@@ -82,13 +82,17 @@ end
 
 --load the commands
 loadslash('slashtest')
-loadslash('runlua')
 loadslash('touch')
 loadslash('type')
 loadslash('drag')
-loadslash('qrcode')
-loadslash('qrcodereset')
 loadslash('tomo')
+
+--load unsafe commands
+if UNSAFE_MODE then
+	loadslash('runlua')
+	loadslash('qrcode')
+	loadslash('qrcodereset')
+end
 
 
 
