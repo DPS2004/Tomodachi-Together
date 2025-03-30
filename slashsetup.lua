@@ -86,6 +86,8 @@ loadslash('runlua')
 loadslash('touch')
 loadslash('type')
 loadslash('drag')
+loadslash('qrcode')
+loadslash('qrcodereset')
 
 
 
