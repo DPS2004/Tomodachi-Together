@@ -19,7 +19,7 @@ local function rfunc(interaction, command, args, user, channel)
         if type(tomodachi[args.button]) == "function" then
             tomodachi[args.button](tomodachi)
         end
-        interaction:reply(nil,true)
+        interaction:reply('',true)
     else
         interaction:reply('err: no function matching '..args.button,true)
     end

@@ -31,7 +31,7 @@ end
 
 -- press the save button on the main menu
 function tomodachi:save()
-	citrainput:touch(0.05,0.95)
+	citrainput:touch(0.95,0.95)
 end
 
 tomodachi.call = tomodachi.save
