@@ -3,6 +3,11 @@ local tomodachi = {}
 tomodachi.states = {}
 --store all state classes in this table!
 
+-- tap the center of the screen
+function tomodachi:center()
+	citrainput:touch(0.5,0.5)
+end
+
 --press the "ok" button for a generic dialogue box
 function tomodachi:ok()
 	citrainput:touch(0.75,0.87)
@@ -51,6 +56,22 @@ function tomodachi:phrase()
 end
 function tomodachi:pocketmoney()
 	citrainput:touch(0.5,0.9)
+end
+
+-- mii accept
+function tomodachi:miiyes()
+	citrainput:touch(.75,.37)
+end
+tomodachi.miiaccept = tomodachi.miiyes
+
+-- mii decline
+function tomodachi:miino()
+	citrainput:touch(.75,.55)
+end
+tomodachi.miidecline = tomodachi.miino
+
+function tomodachi:catchstart()
+	citrainput:touch(.5,.8)
 end
 
 return tomodachi

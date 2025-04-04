@@ -15,6 +15,7 @@ command:addOption(option_text)
 
 --------------On Use---------------
 local function rfunc(interaction, command, args, user, channel)
+    args.button = args.button:lower()
     if tomodachi[args.button] ~= nil then
         if type(tomodachi[args.button]) == "function" then
             tomodachi[args.button](tomodachi)
