@@ -34,6 +34,11 @@ function tomodachi:leave()
 	citrainput:touch(0.05,0.95)
 end
 
+-- enter button on apartment screen, bottom middle of screen
+function tomodachi:enter()
+	citrainput:touch(.5,.95)
+end
+
 -- press the save button on the main menu
 function tomodachi:save()
 	citrainput:touch(0.95,0.95)
@@ -56,6 +61,16 @@ function tomodachi:phrase()
 end
 function tomodachi:pocketmoney()
 	citrainput:touch(0.5,0.9)
+end
+
+-- give mii items button, top left of screen
+function tomodachi:givemii()
+	citrainput:touch(.1,.1)
+end
+
+-- change mii's clothes button
+function tomodachi:clothes()
+	citrainput:touch(.1,.2)
 end
 
 -- options when speaking to a mii
