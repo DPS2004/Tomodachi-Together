@@ -91,12 +91,20 @@ function tomodachi:mii4()
 	citrainput:touch(.75,.80)
 end
 
+-- option up and down for how many things you are selling
+function tomodachi:valueup()
+	citrainput:touch(.20,.35)
+end
+function tomodachi:valuedown()
+	citrainput:touch(.20,.55)
+end
+
 -- just the start button when playing catch because that game is awesome and deserves its own command
 function tomodachi:catchstart()
 	citrainput:touch(.5,.8)
 end
 
--- answer buttons for zoom quiz and probably other quizzes. quiz2 copies the center func as it's the same
+-- answer buttons for quizzes. quiz2 copies the center func as it's the same
 function tomodachi:quiz1()
 	citrainput:touch(.5,.25)
 end
@@ -104,11 +112,19 @@ tomodachi.quiz2 = tomodachi.center
 function tomodachi:quiz3()
 	citrainput:touch(.5,.75)
 end
-function tomodachi:quiztrue()
+function tomodachi:qtrue()
+	citrainput:touch(.75,.50)
+end
+function tomodachi:qfalse()
 	citrainput:touch(.25,.50)
 end
-function tomodachi:quizfalse()
-	citrainput:touch(.75,.50)
+
+-- tomodachi quest buttons
+function tomodachi:quest1()
+	citrainput:touch(.25,.40)
+end
+function tomodachi:quest2()
+	citrainput:touch(.6,.40)
 end
 
 -- prizes after winning a game
