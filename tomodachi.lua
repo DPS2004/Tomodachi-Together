@@ -58,18 +58,28 @@ function tomodachi:pocketmoney()
 	citrainput:touch(0.5,0.9)
 end
 
--- mii accept
-function tomodachi:miiyes()
+-- options when speaking to a mii
+function tomodachi:mii1()
 	citrainput:touch(.75,.37)
 end
-tomodachi.miiaccept = tomodachi.miiyes
+tomodachi.miiaccept = tomodachi.mii1
+tomodachi.miiyes = tomodachi.mii1
 
--- mii decline
-function tomodachi:miino()
+function tomodachi:mii2()
 	citrainput:touch(.75,.55)
 end
-tomodachi.miidecline = tomodachi.miino
+tomodachi.miidecline = tomodachi.mii2
+tomodachi.miino = tomodachi.mii2
 
+function tomodachi:mii3()
+	citrainput:touch(.75,.69)
+end
+
+function tomodachi:mii4()
+	citrainput:touch(.75,.80)
+end
+
+-- just the start button when playing catch because that game is awesome and deserves its own command
 function tomodachi:catchstart()
 	citrainput:touch(.5,.8)
 end
